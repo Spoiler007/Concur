@@ -1,0 +1,135 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+.body-content{
+    width: 90%;
+    margin: 20px 0;
+    min-height: 35vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    justify-content: flex-start;
+}
+.body-content > * {
+    margin: 40px 0;
+}
+.body-content p{
+    letter-spacing: 0.8px;
+    min-width: 300px;
+    font-family: 'Poppins', sans-serif;
+}
+/* #dis-btn{
+    text-transform: uppercase;
+    width: fit-content;
+    border: none;
+    color: #fff;
+    background: #000;
+    padding: 0.7rem 1rem;
+    border-radius: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 1;
+    font-family: "Roboto", sans-serif;
+} */
+
+
+
+
+.protocol{
+    position: relative;
+    border: 2px solid gray;
+    border-radius: 25px;
+    width: 80vw;
+    width: calc(90%-100px);
+    height: 40vh;
+    padding: 30px;
+    background: rgba(226, 219, 211, 0.6);
+    
+}
+.protocol h3{
+    font-size: 30px;
+    margin-left: 10%;
+    font-weight: normal;
+    padding-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.protocol-content{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.content-1 p, .content-3 p,.content-2 p,.content-4 p{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10%;
+    font-size: 18px;
+
+    
+}
+.content-1 h4, .content-3 h4,.content-2 h4,.content-4 h4{
+   font-size: 18px;
+    margin-left: 10%;
+    margin-top: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.left-icon{
+    position:absolute;
+    left: -120px;
+    z-index: 999;    
+}
+.left-icon img{
+    width: 100%;
+    height: 180px;
+}
+.right-icon{
+    position:absolute;
+    right: -100px;
+    z-index: 999;  
+    top: 150px;
+}
+.right-icon img{
+    width: 100%;
+    height: 350px;
+    
+}
+@media screen and (max-width:1100px){
+    .left-icon{
+        display: none;
+    }
+    .right-icon{
+        display: none;
+    }
+}
+@media screen and (max-width:360px) {
+    
+    #dis-btn{
+        margin-top: 1px;
+    }
+    .body-content p{
+        margin-top: -15px;
+    }
+
+    .content-1 h4{
+       padding-top: 10px;
+    }
+    .content-2 h4{
+       padding-top: 10px;
+    }
+    .content-3 h4{
+       padding-top: 10px;
+    }
+    .content-4 h4{
+       padding-top: 10px;
+    }
+    .protocol{
+        height: auto;
+    }
+
+}

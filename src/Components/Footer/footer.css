@@ -1,0 +1,147 @@
+.footer{
+    background: #000;
+    padding: 6rem 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.footer-l{
+    height: 100%;
+}
+.footer-logo{
+    display: flex;
+    width: 15%;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.footer-logo h1{
+margin-left: 10px;
+font-size: 30px;
+color: antiquewhite;
+font-family: 'Roboto', sans-serif;
+}
+
+.footer-logo img{
+    width: 40px;
+    /* margin-left: 20px; */
+    /* border: 1px solid white; */
+    
+}
+
+.footer-icons a {
+  margin-right: 1rem;
+  
+}
+.footer-icons a img{
+    border: 1px solid black;
+    background-color: antiquewhite;
+    padding: 0.8rem ;
+    height: 20px;
+    width: auto;
+    font-size: 30px;
+    margin: 10%;
+    border-radius: 50%;
+   
+
+}
+
+.products p{
+    font-size: 18px;
+    color: antiquewhite;
+font-family: "Roboto", sans-serif;
+padding-bottom: 20px;
+}
+.products a{
+    font-size:18px;
+    color: antiquewhite;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:'Popins', sans-serif;
+}
+.products{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+.learn{
+    display: flex;
+flex-direction: column;
+gap: 1rem;
+
+}
+.contact-us{
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-img{
+    position: absolute;
+    left: 1320px;
+    margin-top: -260px;
+}
+
+.footer-img img{
+    height: 250px;
+    left: 50px;
+}
+
+.footer-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer-section{
+display: flex;
+margin-bottom: 30px;
+justify-content: space-between;
+width: 96%;
+}
+.products{
+    gap: 30px;
+}
+.tag {
+    width: 80%;
+}
+.tag img{
+    max-width: 300px;
+   padding-top: 2.5rem;
+
+}
+@media screen and (max-width:1100px){
+    .footer-img{
+        display: none;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .footer-logo{
+padding-bottom: 50px;
+    }
+
+    .footer-icons {
+        row-gap: 40px;
+    }
+
+    
+}
+
+@media screen and (max-width:600px) {
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+}
+@media (min-width:250px) and (max-width:360px){
+    .tag img{
+        width: 200px;
+    }
+   
+
+}
